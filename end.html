@@ -11,8 +11,14 @@
   <p>Happy Birthday, Malvika </p>
   <p>— Akki</p>
   <p> P.S.- yeh naam kisi ke saamne mat liyo plssss
-<audio autoplay loop hidden>
-  <source src="background.mp3" type="audio/mpeg">
+<audio autoplay loop hidden id="bg-music">
+  <source src="assets/bgmusic.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  // Set volume to approx -4 dB (~0.63 gain level)
+  audio.volume = 0.63;
+</script>
 </body>
 </html>
