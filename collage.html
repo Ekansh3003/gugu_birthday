@@ -138,12 +138,18 @@
     </div>
 
   </div>
+  <audio autoplay loop hidden id="bg-music">
+  <source src="assets/bgmusic.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  // Set volume to approx -4 dB (~0.63 gain level)
+  audio.volume = 0.63;
+</script>
 
   <a href="letter.html" class="btn">Next →</a>
 
-  <audio autoplay loop hidden>
-    <source src="background.mp3" type="audio/mpeg" />
-  </audio>
 
 </body>
 </html>
