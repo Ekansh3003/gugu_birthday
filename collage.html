@@ -1,34 +1,149 @@
-<div class="memory-list">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memories Together</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #fefaf6;
+      font-family: 'Homemade Apple', cursive;
+      margin: 0;
+      padding: 0;
+      color: #3b2f2f;
+    }
 
-  <div class="memory-row">
-    <img src="assets/gugu1.png" alt="Memory 1" class="memory-img" />
-    <div class="memory-text">
-      "Theek se pose kar naaa mai batati hun" 
-      Theeke na mujhe nhi aata nhi hun photogenic kya karun also meri kisi main photo acchi nhi aayi kabhi nhi aati isliye mazak mat udayio
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      color: #c74b4b;
+    }
+
+    .memory-section {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .memory-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: #fffefc;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      background-image: linear-gradient(to bottom, #fffefc 0%, #fdf7ee 100%);
+    }
+
+    .memory-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .memory-image {
+      flex: 1;
+      height: 100%;
+    }
+
+    .memory-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .memory-caption {
+      flex: 1;
+      padding: 2rem;
+      font-size: 1.4rem;
+      line-height: 2;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 3rem auto;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      background-color: #ff9a8b;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #f97963;
+    }
+
+    @media (max-width: 768px) {
+      .memory-block {
+        flex-direction: column !important;
+      }
+
+      .memory-caption {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Memories Together</h1>
+
+  <div class="memory-section">
+
+    <div class="memory-block">
+      <div class="memory-image">
+        <img src="assets/gugu1.png" alt="Memory 1" />
+      </div>
+      <div class="memory-caption">
+        “Theek se pose kar naa mai batati hun” Theeke na mujhe nhi aata nhi hun photogenic kya karun also meri kisi main photo acchi nhi aayi kabhi nhi aati isliye mazak mat udayio
+      </div>
     </div>
+
+    <div class="memory-block">
+      <div class="memory-image">
+        <img src="assets/gugu2.PNG" alt="Memory 2" />
+      </div>
+      <div class="memory-caption">
+        “Sahi se smile kar” Har jagah aise pose kar aise smile kar nhi aataaaa but like one of the beautiful memories not gonna lie science lele plssss
+      </div>
+    </div>
+
+    <div class="memory-block">
+      <div class="memory-image">
+        <img src="assets/gugu3.PNG" alt="Memory 3" />
+      </div>
+      <div class="memory-caption">
+        “Hi pipol ekansh hi kar do” Iss phot main mai nhi hun but yeh photo baaki photos se zyada important hai becuz iss photo ka use mai malvika ko manane main use karta hun along with my ungli jismein nishaan padh gaye hain kya karein din main 100 baar naraaz hoti hai
+      </div>
+    </div>
+
+    <div class="memory-block">
+      <div class="memory-image">
+        <img src="assets/gugu4.png" alt="Memory 4" />
+      </div>
+      <div class="memory-caption">
+        Remember the group? Sadly I ripped it apart not me aadha credit tujhe bhi jaata hai becuz the group always…
+      </div>
+    </div>
+
   </div>
 
-  <div class="memory-row reverse">
-    <div class="memory-text">
-      "Sahi se smile kar"
-      Har jagah aise pose kar aise smile kar nhi aataaaa but like one of the beautiful memories not gonna lie science lele plssss
-    </div>
-    <img src="assets/gugu2.PNG" alt="Memory 2" class="memory-img" />
-  </div>
+  <a href="letter.html" class="btn">Next →</a>
 
-  <div class="memory-row">
-    <img src="assets/gugu3.PNG" alt="Memory 3" class="memory-img" />
-    <div class="memory-text">
-      "Hi pipol ekansh hi kar do" 
-      Iss phot main mai nhi hun but yeh photo baaki photos se zyaada important hai becuz iss photo ka use mai malvika ko manane main use karta hun along with my ungli jismain nishaan padh gye hain kya karein din main 100 baar naraaz hoti hai
-    </div>
-  </div>
+  <audio autoplay loop hidden>
+    <source src="background.mp3" type="audio/mpeg" />
+  </audio>
 
-  <div class="memory-row reverse">
-    <div class="memory-text">
-      Remember the group? Sadly I ripped it apart mot ne aadha credit tujhe bhi jaata hai becuz the group always
-    </div>
-    <img src="assets/gugu4.png" alt="Memory 4" class="memory-img" />
-  </div>
-
-</div>
+</body>
+</html>
